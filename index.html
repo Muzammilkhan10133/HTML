@@ -2,46 +2,175 @@
 	<head><title> Hello Bhaiya. </title></head>
 
 <style>
-#main{ height: 800px; width:90%; background:#ccc; margin:0px auto;}
+#main{ height: 800px; width:90%; background:white; margin:0px auto;
+box-shadow: 5px 10px 10px #888888; 
+}
 #header{
-height: 100px; width:100%; background:black; 
+height: 89px; width:100%; background:black; 
 }
 #menu{
-height: 96px; width:69%; background:orange; 
+height: 92%; width:69%; background:lightpink; 
 float:left;
-margin-top: 0.2%;
+margin-top: 0.3%;
 margin-left: 0.5%;
 }
 #logo{
-height: 100px; width:30%; background:purple; 
+height: 100%; width:30%; background:purple; 
 float:left;
 }
 #left{
-height: 700px; width:20%; background:red; 
+height: 700px; width:20%; background-color: lightblue; 
 float:left;
 }
 
 #right{
-height: 700px; width:20%; background:green; 
-float:right;
+height: 400px; width:29%; background:green; 
+float:right;margin-top: 10%;margin-right: 10%;box-shadow: 10px 10px 5px #888888
 }
 #footer{
-height: 100px; width:80%; background-color: greenyellow; 
-margin-top:600px;
+height: 50px; width:100%; background-color: greenyellow; 
+margin-top:700px;
 }
+#drop{
+
+ margin-left: 15%;  
+ margin-top: 3%; 
+
+}
+#drop ul
+{
+    font-family: Arial, Verdana;
+    font-size: 18pt;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+#drop ul li
+{
+    display: block;
+    position: relative;
+    float: left;
+}
+
+#drop li ul
+{
+    display: none;
+}
+
+#drop ul li a 
+{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
+    padding: 5px 50px 5px 15px;
+    background: #2C5463;
+    white-space: nowrap;
+           
+}
+
+#drop ul li a:hover 
+{
+    background: #617F8A;
+    font-size: 20pt;
+}
+#drop li:hover ul 
+{
+    display: block;
+    position: absolute;
+}
+
+#drop li:hover li
+{
+    float: none;
+    font-size: 11px;
+}
+
+#drop li:hover a 
+{
+    background: #617F8A;
+}
+
+#drop li:hover li a:hover 
+{
+    background: #95A9B1;
+}
+#right form{
+    margin-left: 16%;
+    margin-top:  20%;
+    
+    
+}
+
+  .textbox { 
+    height: 15%; 
+    width: 80%; 
+    background-color: transparent;  
+    border-style: solid;  
+    border-width: 0px 0px 1px 0px;  
+    border-color: darkred; 
+    outline:0; 
+  
+  } 
+  #right h3{
+      text-align: center;
+      
+  }
+ </style> 
+
+
 </style>
 
 <body>
 <div id="main">
 	<div id="header">
 	 
-	 <div id="logo"></div><div id="menu"></div>
+	 <div id="logo"></div>
+     <div id="menu">
+         <div id="drop">
+                     <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About Us</a>
+        <ul>
+        <li><a href="">The Team</a></li>
+        <li><a href="">History</a></li>
+        <li><a href="">Vision</a></li>
+        </ul>
+      </li>
+      <li><a href="">Products</a>
+        <ul>
+        <li><a href="">Cozy Couch</a></li>
+        <li><a href="">Great Table</a></li>
+        <li><a href="">Small Chair</a></li>
+        <li><a href="">Shiny Shelf</a></li>
+        <li><a href="">Invisible Nothing</a></li>
+        </ul>
+      </li>
+      <li><a href="">Contact</a>
+        <ul>
+        <li><a href="">Online</a></li>
+        <li><a href="">Right Here</a></li>
+        <li><a href="">Somewhere Else</a></li>
+        </ul>
+      </li>
+    </ul>
+             </div>
+     </div>
 	</div>
 	<div id="left">
+ 
 
 </div>
 
 <div id="right">
+       <h3>Sign in</h3>
+           <form>
+        <input class="textbox" type="text" name="Fname" placeholder="Enter your Email" ><br>
+        <input  class="textbox" type="password" name="lname" placeholder="Enter your pasword"><br>
+
+        </form>
 
 </div>
 
